@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: #C2E9FB;
+    font-size: 1.6rem;
+    font-family: Mont;
+}
+
+#app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:4.8rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    
+    background: #FFFFFF;
+    border-radius: .6rem;
+}
+
+main #header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.6rem
+}
+
+#header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+
+p, input{
+    font-family: 'DM Sans', sans-serif;
+}
+
+p{
+    font-size: 1.6rem;
+    color:rgba(52, 53, 91, 80)
+}
+
+.input-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 12.5rem;
+    height: 5.3rem;
+}
+
+#try{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #7879F1;
+    padding: 1.6rem;
+    border: 0;
+    border-radius: 0 .6rem .6rem 0;
+    width: 100%;
+
+    cursor: pointer
+}
+
+#shotScreen{
+    text-align: center;
+    padding: 1.6rem;
+    border: 0;
+    border-radius: .6rem 0 0 .6rem;
+    background: #DCE2E9;
+    color: #34355B;
+}
+
+#shotScreen:focus{
+    outline: 1px solid #898e92;
+}
