@@ -8,83 +8,74 @@
     font-size: 62.5%;
 }
 
-body{
-    background: #C2E9FB;
-    font-size: 1.6rem;
-    font-family: Mont;
-}
-
-#app{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:4.8rem;
-    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-    
-    background: #FFFFFF;
-    border-radius: .6rem;
-}
-
-main #header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:1.6rem
-}
-
-#header h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.4rem;
-    font-weight: 600;
-}
-
-
-p, input{
+body, p, input, button{
     font-family: 'DM Sans', sans-serif;
 }
 
-p{
+body{
+    display: grid;
+    place-items: center;
+
     font-size: 1.6rem;
-    color:rgba(52, 53, 91, 80)
+    height: 100vh;
+    background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
 }
 
-.input-wrapper{
+main{
+
+    width: min(500 - 90%);
+    text-align: center;
+    padding: 4.8rem 6.4rem 6.4rem;
+    margin-top: -12rem;
+    background: #FFFFFF;
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    color: #34355B;
+    margin-bottom: 1.6rem;
+}
+
+p{
+    color: #34355B;
+    line-height: 150%;
+    opacity: .80;
+    margin-bottom: 4.8rem;
+}
+
+form{
     display: flex;
     justify-content: center;
-    width: 12.5rem;
-    height: 5.3rem;
 }
 
-#try{
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    background: #7879F1;
+input{
+    width: 7rem;
     padding: 1.6rem;
     border: 0;
-    border-radius: 0 .6rem .6rem 0;
-    width: 100%;
-
-    cursor: pointer
-}
-
-#shotScreen{
-    text-align: center;
-    padding: 1.6rem;
-    border: 0;
-    border-radius: .6rem 0 0 .6rem;
+    border-radius: .4rem 0 0 .4rem;
     background: #DCE2E9;
+
     color: #34355B;
 }
 
-#shotScreen:focus{
-    outline: 1px solid #898e92;
+button{
+    padding: 1.6rem;
+    border: 0;
+    border-radius: 0 .4rem .4rem 0;
+    font-weight: 700;
+    background: #7879F1;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(67, 67, 117);
+}
+
+.screen2 button{
+    border-radius: .4rem;
+    margin-top: 3.3rem;
 }

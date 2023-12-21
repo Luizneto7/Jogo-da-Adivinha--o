@@ -11,18 +11,21 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="app">
-        <main>
-            <div id="header">
-                <h1>Jogo da Adivinhação</h1>
-                <p>Adivinha o número entre 0 e 10</p>
-            </div>
-            <div class="input-wrapper">
-                <input type="text" maxlength="2" size="2" id="shotScreen">
-                <button id="try">Tentar</button>
-        </main>
-    </div>
-    </div>
+    <main>
+        <div class="screen1">
+            <h1>Jogo da Adivinhação</h1>
+            <p>Adivinhe o número entre 0 e 10</p>
+            <form>
+                <input type="number">
+                <button>Tentar</button>
+            </form>
+        </div>
+        <div class="screen2, hidden">
+            <h1>Acertou em 3 tentativas!</h1>
+            <button>Jogar novamente</button>
+        </div>
+
+    </main>
 </body>
 <script src="./script.js"></script>
 </html>
