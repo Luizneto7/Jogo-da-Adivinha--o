@@ -21,6 +21,10 @@ body{
     background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
 }
 
+.hide{
+    display: none;
+}
+
 main{
 
     width: min(500 - 90%);
@@ -34,6 +38,7 @@ main{
 
 h1{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 2.4rem;
     color: #34355B;
     margin-bottom: 1.6rem;
@@ -69,10 +74,18 @@ button{
     background: #7879F1;
     color: #FFFFFF;
     cursor: pointer;
+    transition: .3s;
 }
 
 button:hover{
     background: rgb(67, 67, 117);
+}
+
+.screen2 h2{
+    font-size: 2.4rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
+    line-height: 150%;
 }
 
 .screen2 button{
